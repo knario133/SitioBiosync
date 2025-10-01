@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const translations = {
         es: {
             'page.title': 'BioSync | Ciencia viva para mentes jóvenes',
-            'meta.description': 'BioSync fabrica kits y biorreactores educativos para inspirar a niños y jóvenes científicos en toda Latinoamérica.',
+            'meta.description': 'BioSync diseña kits y biorreactores educativos fabricados en Chile para democratizar la biotecnología con soporte local e iteración rápida.',
             'nav.home': 'Inicio',
             'nav.kits': 'Kits',
             'nav.about': 'Sobre Nosotros',
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'nav.cta': 'Comprar Ahora',
             'hero.badge': 'Educación científica accesible',
             'hero.title': 'Ciencia viva para mentes jóvenes',
-            'hero.subtitle': 'En BioSync creemos que la ciencia debe ser accesible, inspiradora y cercana a quienes serán los futuros innovadores de nuestra región.',
+            'hero.subtitle': 'Fabricamos en Chile kits y biorreactores educativos para que cada aula acceda a biotecnología real con soporte inmediato y mejoras a medida.',
             'hero.primaryCta': 'Explorar kits',
             'hero.secondaryCta': 'Nuestra misión',
             'hero.card.title': 'Biorreactor educativo',
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'hero.card.button': 'Descubrir más',
             'products.badge': 'Nuestros Kits Estrella',
             'products.title': 'Experimenta, construye y comparte descubrimientos',
-            'products.subtitle': 'Equipos pensados para escuelas, academias STEM y laboratorios juveniles que buscan experimentar sin barreras.',
+            'products.subtitle': 'Equipos pensados para escuelas, academias STEM y laboratorios juveniles que buscan experimentar sin barreras y con soporte cercano.',
             'products.kit1.description': 'Introduce conceptos clave de cultivo celular con actividades guiadas para aulas de enseñanza media.',
             'products.kit2.description': 'Componentes modulares para construir mini biorreactores y aprender sobre sensores, control y automatización.',
             'products.kit3.description': 'Incluye software educativo para monitoreo de datos en vivo y experimentos colaborativos entre escuelas.',
@@ -58,13 +58,14 @@ document.addEventListener('DOMContentLoaded', () => {
             'carousel.prev': 'Anterior',
             'carousel.next': 'Siguiente',
             'contact.title': 'Hablemos de tu próximo laboratorio',
-            'contact.subtitle': 'Escríbenos para recibir demostraciones, fichas técnicas o agendar un taller en tu colegio o academia.',
+            'contact.subtitle': 'Escríbenos para recibir demostraciones fabricadas localmente, fichas técnicas o agendar un taller en tu colegio o academia.',
             'contact.emailLabel': 'Correo',
             'contact.emailValue': 'contacto@biosync.cl',
             'contact.locationLabel': 'Base',
             'contact.locationValue': 'Santiago, Chile',
             'form.nameLabel': 'Nombre',
             'form.namePlaceholder': 'Tu nombre',
+            'form.nameHint': 'Cuéntanos quién lidera el proyecto.',
             'form.emailLabel': 'Correo',
             'form.emailPlaceholder': 'nombre@correo.com',
             'form.institutionLabel': 'Institución',
@@ -72,7 +73,12 @@ document.addEventListener('DOMContentLoaded', () => {
             'form.messageLabel': 'Mensaje',
             'form.messagePlaceholder': 'Cuéntanos qué necesitas',
             'form.submit': 'Enviar',
-            'form.success': 'Mensaje enviado',
+            'form.loading': 'Enviando...',
+            'form.sending': 'Enviando tu mensaje...',
+            'form.error.required': 'Este campo es obligatorio.',
+            'form.error.email': 'Ingresa un correo electrónico válido.',
+            'form.error.summary': 'Revisa los campos marcados para continuar.',
+            'form.success': '¡Gracias! Te contactaremos en breve.',
             'footer.description': 'Fabricamos ecosistemas científicos accesibles para despertar vocaciones STEM en toda Latinoamérica.',
             'footer.home': 'Inicio',
             'footer.kits': 'Kits',
@@ -82,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         en: {
             'page.title': 'BioSync | Living science for young minds',
-            'meta.description': 'BioSync creates educational lab kits and bioreactors to inspire young scientists across Latin America.',
+            'meta.description': 'BioSync creates educational lab kits and bioreactors manufactured in Chile to democratize biotechnology with local support and rapid iteration.',
             'nav.home': 'Home',
             'nav.kits': 'Kits',
             'nav.about': 'About Us',
@@ -90,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'nav.cta': 'Buy Now',
             'hero.badge': 'Accessible science education',
             'hero.title': 'Living science for young minds',
-            'hero.subtitle': 'At BioSync we believe science should be accessible, inspiring, and close to the future innovators of our region.',
+            'hero.subtitle': 'We build in Chile so every classroom can access real biotechnology with immediate support and tailor-made upgrades.',
             'hero.primaryCta': 'Explore kits',
             'hero.secondaryCta': 'Our mission',
             'hero.card.title': 'Educational bioreactor',
@@ -101,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'hero.card.button': 'Discover more',
             'products.badge': 'Our Star Kits',
             'products.title': 'Experiment, build, and share discoveries',
-            'products.subtitle': 'Equipment created for schools, STEM academies, and youth labs eager to experiment without barriers.',
+            'products.subtitle': 'Equipment created for schools, STEM academies, and youth labs eager to experiment without barriers and with close support.',
             'products.kit1.description': 'Introduce key cell culture concepts with guided activities for middle and high school classrooms.',
             'products.kit2.description': 'Modular components to build mini bioreactors and learn about sensors, control, and automation.',
             'products.kit3.description': 'Includes educational software for live data monitoring and collaborative experiments between schools.',
@@ -133,13 +139,14 @@ document.addEventListener('DOMContentLoaded', () => {
             'carousel.prev': 'Previous',
             'carousel.next': 'Next',
             'contact.title': "Let's talk about your next lab",
-            'contact.subtitle': 'Write to us to request demos, tech sheets, or schedule a workshop at your school or academy.',
+            'contact.subtitle': 'Write to us to request locally manufactured demos, tech sheets, or schedule a workshop at your school or academy.',
             'contact.emailLabel': 'Email',
             'contact.emailValue': 'contacto@biosync.cl',
             'contact.locationLabel': 'HQ',
             'contact.locationValue': 'Santiago, Chile',
             'form.nameLabel': 'Name',
             'form.namePlaceholder': 'Your name',
+            'form.nameHint': 'Tell us who is leading the project.',
             'form.emailLabel': 'Email',
             'form.emailPlaceholder': 'name@email.com',
             'form.institutionLabel': 'Institution',
@@ -147,7 +154,12 @@ document.addEventListener('DOMContentLoaded', () => {
             'form.messageLabel': 'Message',
             'form.messagePlaceholder': 'Tell us what you need',
             'form.submit': 'Send',
-            'form.success': 'Message sent!',
+            'form.loading': 'Sending...',
+            'form.sending': 'Sending your message...',
+            'form.error.required': 'This field is required.',
+            'form.error.email': 'Enter a valid email address.',
+            'form.error.summary': 'Review the highlighted fields to continue.',
+            'form.success': "Thank you! We'll get back to you shortly.",
             'footer.description': 'We build accessible science ecosystems to spark STEM vocations across Latin America.',
             'footer.home': 'Home',
             'footer.kits': 'Kits',
@@ -158,6 +170,84 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     let currentLang = 'es';
+
+    const getTranslationValue = (lang, key) => translations?.[lang]?.[key];
+    const getActiveTranslation = (key) => getTranslationValue(currentLang, key) ?? getTranslationValue('es', key) ?? '';
+
+    const contactForm = document.querySelector('.contact-form');
+    const formStatus = document.getElementById('formStatus');
+    const submitButton = contactForm ? contactForm.querySelector('button[type="submit"]') : null;
+    const formFields = contactForm ? Array.from(contactForm.querySelectorAll('input, textarea')) : [];
+
+    const clearStatus = () => {
+        if (!formStatus) return;
+        formStatus.textContent = '';
+        formStatus.classList.remove('is-error');
+        delete formStatus.dataset.statusKey;
+    };
+
+    const showStatus = (key, isError = false) => {
+        if (!formStatus) return;
+        const message = getActiveTranslation(key) || key;
+        formStatus.textContent = message;
+        formStatus.classList.toggle('is-error', Boolean(isError));
+        formStatus.dataset.statusKey = key;
+    };
+
+    const clearFieldError = (field) => {
+        const errorEl = document.getElementById(`${field.id}Error`);
+        if (errorEl) {
+            errorEl.textContent = '';
+            errorEl.classList.remove('is-visible');
+            delete errorEl.dataset.errorKey;
+        }
+        field.setAttribute('aria-invalid', 'false');
+    };
+
+    const setFieldError = (field, key) => {
+        const errorEl = document.getElementById(`${field.id}Error`);
+        if (!errorEl) return;
+        const message = getActiveTranslation(key) || key;
+        errorEl.textContent = message;
+        errorEl.classList.add('is-visible');
+        errorEl.dataset.errorKey = key;
+        field.setAttribute('aria-invalid', 'true');
+    };
+
+    const validateField = (field) => {
+        const value = field.value.trim();
+        if (!value) {
+            setFieldError(field, 'form.error.required');
+            return false;
+        }
+
+        if (field.type === 'email') {
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(value)) {
+                setFieldError(field, 'form.error.email');
+                return false;
+            }
+        }
+
+        clearFieldError(field);
+        return true;
+    };
+
+    const setLoadingState = (isLoading) => {
+        if (!submitButton) return;
+        const defaultText = getActiveTranslation('form.submit') || submitButton.dataset.defaultText || submitButton.textContent;
+        if (isLoading) {
+            submitButton.dataset.defaultText = defaultText;
+            const loadingText = getActiveTranslation('form.loading') || submitButton.dataset.loadingText || defaultText;
+            submitButton.textContent = loadingText;
+            submitButton.disabled = true;
+            submitButton.setAttribute('aria-busy', 'true');
+        } else {
+            submitButton.textContent = defaultText;
+            submitButton.disabled = false;
+            submitButton.removeAttribute('aria-busy');
+        }
+    };
 
     const updateLanguage = (lang) => {
         const langData = translations[lang];
@@ -189,10 +279,29 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        const submitButton = document.querySelector('.contact-form button[type="submit"]');
-        if (submitButton && langData['form.submit']) {
-            submitButton.textContent = langData['form.submit'];
+        if (submitButton) {
+            if (langData['form.submit']) {
+                submitButton.textContent = langData['form.submit'];
+                submitButton.dataset.defaultText = langData['form.submit'];
+            }
+            if (langData['form.loading']) {
+                submitButton.dataset.loadingText = langData['form.loading'];
+            }
         }
+
+        if (formStatus && formStatus.dataset.statusKey) {
+            const statusKey = formStatus.dataset.statusKey;
+            if (langData[statusKey]) {
+                formStatus.textContent = langData[statusKey];
+            }
+        }
+
+        document.querySelectorAll('.form-error').forEach((errorEl) => {
+            const errorKey = errorEl.dataset.errorKey;
+            if (errorKey && langData[errorKey]) {
+                errorEl.textContent = langData[errorKey];
+            }
+        });
 
         currentLang = lang;
     };
@@ -244,21 +353,45 @@ document.addEventListener('DOMContentLoaded', () => {
         yearEl.textContent = new Date().getFullYear();
     }
 
-    const contactForm = document.querySelector('.contact-form');
     if (contactForm) {
+        // change: Added accessible validation and feedback for the contact form
+        formFields.forEach((field) => {
+            field.addEventListener('input', () => {
+                validateField(field);
+                clearStatus();
+            });
+
+            field.addEventListener('blur', () => {
+                validateField(field);
+            });
+        });
+
         contactForm.addEventListener('submit', (event) => {
             event.preventDefault();
-            contactForm.reset();
-            const button = contactForm.querySelector('button[type="submit"]');
-            if (!button) return;
-            const successText = translations[currentLang]['form.success'] || 'Mensaje enviado';
-            const defaultText = translations[currentLang]['form.submit'] || button.textContent;
-            button.textContent = successText;
-            button.disabled = true;
+            clearStatus();
+
+            let hasErrors = false;
+            formFields.forEach((field) => {
+                const isValid = validateField(field);
+                if (!isValid) {
+                    hasErrors = true;
+                }
+            });
+
+            if (hasErrors) {
+                showStatus('form.error.summary', true);
+                return;
+            }
+
+            setLoadingState(true);
+            showStatus('form.sending');
+
             setTimeout(() => {
-                button.textContent = defaultText;
-                button.disabled = false;
-            }, 3000);
+                setLoadingState(false);
+                showStatus('form.success');
+                contactForm.reset();
+                formFields.forEach((field) => clearFieldError(field));
+            }, 1600);
         });
     }
 
@@ -278,6 +411,8 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!lang || lang === currentLang) return;
             updateLanguage(lang);
             syncLangButtons(lang);
+            clearStatus();
+            formFields.forEach((field) => clearFieldError(field));
         });
     });
 
