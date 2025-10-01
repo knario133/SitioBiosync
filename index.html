@@ -3,13 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="BioSync fabrica kits y biorreactores educativos para inspirar a niños y jóvenes científicos en toda Latinoamérica.">
+    <meta name="description" content="BioSync diseña kits y biorreactores educativos fabricados en Chile para democratizar la biotecnología con soporte local e iteración rápida.">
+    <!-- change: Added favicon and comprehensive social metadata for BioSync -->
+    <link rel="icon" type="image/png" href="assets/Logo.png">
+    <meta property="og:title" content="BioSync | Ciencia viva para mentes jóvenes">
+    <meta property="og:description" content="Kits y biorreactores educativos fabricados en Chile con soporte inmediato y mejoras a medida.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=1200&q=80&fm=webp">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://biosync.cl/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="BioSync | Ciencia viva para mentes jóvenes">
+    <meta name="twitter:description" content="Democratizamos la biotecnología educativa con fabricación local, soporte inmediato y kits listos para el aula.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=1200&q=80&fm=webp">
     <title>BioSync | Ciencia viva para mentes jóvenes</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- change: Preloaded Inter font for faster rendering -->
+    <link rel="preload" href="https://rsms.me/inter/font-files/Inter-roman.var.woff2?v=4" as="font" type="font/woff2" crossorigin>
+    <link href="https://rsms.me/inter/inter.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- change: Linked updated brand stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,7 +31,8 @@
     <nav class="navbar navbar-expand-lg fixed-top shadow-sm" id="mainNav">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="#inicio">
-                <img src="assets/logo.png" alt="BioSync" class="logo me-2">
+                <img src="assets/Logo.png" alt="Logotipo de BioSync" class="logo me-2">
+                <!-- change: Corrected logo reference and improved alt text -->
                 <span class="fw-semibold">BioSync</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,10 +42,13 @@
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
                     <li class="nav-item"><a class="nav-link" href="#inicio" data-i18n="nav.home">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#kits" data-i18n="nav.kits">Kits</a></li>
+                    <!-- change: Added navigation access to the founders spotlight section -->
+                    <li class="nav-item"><a class="nav-link" href="#creadores" data-i18n="nav.team">Creadores</a></li>
                     <li class="nav-item"><a class="nav-link" href="#sobre" data-i18n="nav.about">Sobre Nosotros</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contacto" data-i18n="nav.contact">Contacto</a></li>
                     <li class="nav-item ms-lg-3">
-                        <a class="btn btn-primary btn-gradient" href="#kits" data-i18n="nav.cta">Comprar Ahora</a>
+                        <a class="btn btn-primary nav-cta" href="#kits" data-i18n="nav.cta">Comprar Ahora</a>
+                        <!-- change: Applied brand primary button styling to navbar CTA -->
                     </li>
                 </ul>
                 <div class="language-switcher ms-lg-4" role="group" aria-label="Selector de idioma">
@@ -49,20 +67,22 @@
                 <div class="col-lg-6 text-white hero-content" data-animate>
                     <span class="badge rounded-pill bg-highlight mb-3" data-i18n="hero.badge">Educación científica accesible</span>
                     <h1 class="display-4 fw-bold" data-i18n="hero.title">Ciencia viva para mentes jóvenes</h1>
-                    <p class="lead" data-i18n="hero.subtitle">En BioSync creemos que la ciencia debe ser accesible, inspiradora y cercana a quienes serán los futuros innovadores de nuestra región.</p>
-                    <div class="d-flex flex-column flex-sm-row gap-3">
-                        <a href="#kits" class="btn btn-lg btn-primary btn-gradient" data-i18n="hero.primaryCta">Explorar kits</a>
-                        <a href="#sobre" class="btn btn-lg btn-outline-light" data-i18n="hero.secondaryCta">Nuestra misión</a>
+                    <p class="lead" data-i18n="hero.subtitle">Fabricamos en Chile kits y biorreactores educativos para que cada aula acceda a biotecnología real con soporte inmediato y mejoras a medida.</p>
+                    <div class="hero-cta-group d-flex flex-column flex-sm-row gap-3" role="group" aria-label="Acciones principales">
+                        <a href="#kits" class="btn btn-lg btn-primary" data-i18n="hero.primaryCta">Explorar kits</a>
+                        <a href="#sobre" class="btn btn-lg btn-outline-secondary" data-i18n="hero.secondaryCta">Nuestra misión</a>
+                        <!-- change: Streamlined hero CTAs with updated hierarchy and accessibility -->
                     </div>
                 </div>
                 <div class="col-lg-5 ms-lg-auto hero-card" data-animate>
-                    <div class="glass-card p-4">
+                    <div class="hero-info-card p-4">
+                        <!-- change: Reworked hero info card to improve readability across breakpoints -->
                         <h2 class="h4" data-i18n="hero.card.title">Biorreactor educativo</h2>
                         <p data-i18n="hero.card.description">Un prototipo seguro y didáctico para que estudiantes comprendan procesos de biotecnología y microbiología con experimentos reales en el aula.</p>
                         <ul class="list-unstyled mb-4">
-                            <li><i class="bi bi-lightbulb me-2"></i><span data-i18n="hero.card.feature1">Diseño creado en Chile para más acceso y menor costo.</span></li>
-                            <li><i class="bi bi-shield-check me-2"></i><span data-i18n="hero.card.feature2">Soporte local inmediato y mejoras a medida.</span></li>
-                            <li><i class="bi bi-globe2 me-2"></i><span data-i18n="hero.card.feature3">Componentes impresos en 3D y PCB propias sin tiempos de espera.</span></li>
+                            <li><i class="bi bi-lightbulb me-2" aria-hidden="true"></i><span data-i18n="hero.card.feature1">Diseño creado en Chile para más acceso y menor costo.</span></li>
+                            <li><i class="bi bi-shield-check me-2" aria-hidden="true"></i><span data-i18n="hero.card.feature2">Soporte local inmediato y mejoras a medida.</span></li>
+                            <li><i class="bi bi-globe2 me-2" aria-hidden="true"></i><span data-i18n="hero.card.feature3">Componentes impresos en 3D y PCB propias sin tiempos de espera.</span></li>
                         </ul>
                         <a href="#kits" class="btn btn-outline-primary" data-i18n="hero.card.button">Descubrir más</a>
                     </div>
@@ -77,46 +97,55 @@
             <div class="text-center mb-5" data-animate>
                 <span class="section-badge" data-i18n="products.badge">Nuestros Kits Estrella</span>
                 <h2 class="section-title" data-i18n="products.title">Experimenta, construye y comparte descubrimientos</h2>
-                <p class="section-subtitle" data-i18n="products.subtitle">Equipos pensados para escuelas, academias STEM y laboratorios juveniles que buscan experimentar sin barreras.</p>
+                <p class="section-subtitle" data-i18n="products.subtitle">Equipos pensados para escuelas, academias STEM y laboratorios juveniles que buscan experimentar sin barreras y con soporte cercano.</p>
+                <!-- change: Updated product narrative to highlight local support -->
             </div>
             <div class="row g-4">
                 <div class="col-md-6 col-lg-3" data-animate>
                     <div class="card product-card h-100">
-                        <img src="https://images.unsplash.com/photo-1582719478450-ef19c89b56ba?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Kit BioExplorer">
-                        <div class="card-body">
+                        <!-- change: Restored remote kit imagery to rely on original hosted sources -->
+                        <img src="https://images.unsplash.com/photo-1582719478450-ef19c89b56ba?auto=format&amp;fit=crop&amp;w=800&amp;q=80" class="card-img-top" alt="Kit BioExplorer con equipamiento de laboratorio" loading="lazy" decoding="async">
+                        <div class="card-body d-flex flex-column">
+                            <!-- change: Normalized kit card layout and CTA alignment -->
                             <h3 class="h5">Kit BioExplorer</h3>
                             <p class="card-text" data-i18n="products.kit1.description">Introduce conceptos clave de cultivo celular con actividades guiadas para aulas de enseñanza media.</p>
-                            <a href="#contacto" class="btn btn-outline-primary stretched-link" data-i18n="products.cta">Ver más</a>
+                            <a href="#contacto" class="btn btn-outline-primary mt-auto align-self-start" data-i18n="products.cta">Ver más</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3" data-animate>
                     <div class="card product-card h-100">
-                        <img src="https://images.unsplash.com/photo-1604882350920-6d438d9d8f15?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Kit MakerLab">
-                        <div class="card-body">
+                        <!-- change: Restored remote kit imagery to rely on original hosted sources -->
+                        <img src="https://images.unsplash.com/photo-1604882350920-6d438d9d8f15?auto=format&amp;fit=crop&amp;w=800&amp;q=80" class="card-img-top" alt="Kit MakerLab con componentes para biotecnología" loading="lazy" decoding="async">
+                        <div class="card-body d-flex flex-column">
+                            <!-- change: Normalized kit card layout and CTA alignment -->
                             <h3 class="h5">Kit MakerLab</h3>
                             <p class="card-text" data-i18n="products.kit2.description">Componentes modulares para construir mini biorreactores y aprender sobre sensores, control y automatización.</p>
-                            <a href="#contacto" class="btn btn-outline-primary stretched-link" data-i18n="products.cta">Ver más</a>
+                            <a href="#contacto" class="btn btn-outline-primary mt-auto align-self-start" data-i18n="products.cta">Ver más</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3" data-animate>
                     <div class="card product-card h-100">
-                        <img src="https://images.unsplash.com/photo-1519300615460-998716f27858?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Kit ProCulture">
-                        <div class="card-body">
+                        <!-- change: Restored remote kit imagery to rely on original hosted sources -->
+                        <img src="https://images.unsplash.com/photo-1519300615460-998716f27858?auto=format&amp;fit=crop&amp;w=800&amp;q=80" class="card-img-top" alt="Kit ProCulture para prácticas de laboratorio" loading="lazy" decoding="async">
+                        <div class="card-body d-flex flex-column">
+                            <!-- change: Normalized kit card layout and CTA alignment -->
                             <h3 class="h5">Kit ProCulture</h3>
                             <p class="card-text" data-i18n="products.kit3.description">Incluye software educativo para monitoreo de datos en vivo y experimentos colaborativos entre escuelas.</p>
-                            <a href="#contacto" class="btn btn-outline-primary stretched-link" data-i18n="products.cta">Ver más</a>
+                            <a href="#contacto" class="btn btn-outline-primary mt-auto align-self-start" data-i18n="products.cta">Ver más</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3" data-animate>
                     <div class="card product-card h-100">
-                        <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Kit DataSync">
-                        <div class="card-body">
+                        <!-- change: Restored remote kit imagery to rely on original hosted sources -->
+                        <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&amp;fit=crop&amp;w=800&amp;q=80" class="card-img-top" alt="Kit DataSync con instrumentos digitales" loading="lazy" decoding="async">
+                        <div class="card-body d-flex flex-column">
+                            <!-- change: Normalized kit card layout and CTA alignment -->
                             <h3 class="h5">Kit DataSync</h3>
                             <p class="card-text" data-i18n="products.kit4.description">Plataforma digital para registrar experimentos, compartir resultados y construir comunidad científica joven.</p>
-                            <a href="#contacto" class="btn btn-outline-primary stretched-link" data-i18n="products.cta">Ver más</a>
+                            <a href="#contacto" class="btn btn-outline-primary mt-auto align-self-start" data-i18n="products.cta">Ver más</a>
                         </div>
                     </div>
                 </div>
@@ -186,6 +215,86 @@
         </div>
     </section>
 
+    <!-- change: Highlighted collaboration with Hub de Negocios Sostenibles UNAB -->
+    <section class="section-padding partners-section" id="alianzas">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6" data-animate>
+                    <span class="section-badge" data-i18n="partners.badge">Colaboraciones</span>
+                    <h2 class="section-title" data-i18n="partners.title">Impulsado junto al Hub de Negocios Sostenibles UNAB</h2>
+                    <p class="section-subtitle" data-i18n="partners.description">Este proyecto se ha desarrollado con la colaboración del Hub de Negocios Sostenibles de la Universidad Andrés Bello para fortalecer el acceso a biotecnología educativa fabricada en Chile.</p>
+                </div>
+                <div class="col-lg-6" data-animate>
+                    <a class="partner-card" href="https://www.linkedin.com/company/hubdenegociossosteniblesunab/" target="_blank" rel="noopener" aria-label="LinkedIn del Hub de Negocios Sostenibles UNAB">
+                        <div class="partner-logo" aria-hidden="true">
+                            <svg viewBox="0 0 160 160" role="img" focusable="false">
+                                <defs>
+                                    <linearGradient id="hubGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#0f4f82" />
+                                        <stop offset="100%" stop-color="#229b83" />
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="80" cy="80" r="76" fill="url(#hubGradient)" />
+                                <text x="50%" y="52%" text-anchor="middle" font-size="48" font-family="'Inter', sans-serif" fill="#ffffff" font-weight="700">HUB</text>
+                                <text x="50%" y="74%" text-anchor="middle" font-size="18" font-family="'Inter', sans-serif" fill="#e6f5f2" font-weight="600">UNAB</text>
+                            </svg>
+                        </div>
+                        <div class="partner-copy">
+                            <p class="partner-name" data-i18n="partners.name">Hub de Negocios Sostenibles UNAB</p>
+                            <p class="partner-link" data-i18n="partners.cta">Ver perfil en LinkedIn</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Creadores -->
+    <section class="section-padding creators-section" id="creadores">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-5" data-animate>
+                    <!-- change: Added founders section to highlight Fernanda and Francisco with mission-aligned copy -->
+                    <span class="section-badge" data-i18n="founders.badge">Creadores</span>
+                    <h2 class="section-title" data-i18n="founders.title">Fernanda y Francisco impulsan BioSync</h2>
+                    <p class="section-subtitle" data-i18n="founders.subtitle">Un equipo multidisciplinario que diseña y fabrica localmente para que cada estudiante experimente biotecnología real con soporte inmediato.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row g-4">
+                        <div class="col-sm-6" data-animate>
+                            <article class="founder-card h-100">
+                                <div class="founder-photo">
+                                    <!-- change: Relinked Fernanda portrait to original hosted photography -->
+                                    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&amp;fit=crop&amp;w=640&amp;q=80" alt="Retrato ilustrativo de Fernanda Rojas Morales" loading="lazy" decoding="async">
+                                </div>
+                                <div class="founder-content">
+                                    <h3 class="founder-name" data-i18n="founders.fernanda.name">Fernanda Rojas Morales</h3>
+                                    <p class="founder-role" data-i18n="founders.fernanda.role">Bióloga y líder científica</p>
+                                    <p class="founder-bio" data-i18n="founders.fernanda.bio">Cofundadora con foco en experiencias educativas vivas y soporte docente permanente.</p>
+                                    <a class="btn btn-outline-primary" href="https://www.linkedin.com/in/fernanda-rojas-morales-870030315/" target="_blank" rel="noopener" data-i18n="founders.linkedin">Conectar en LinkedIn</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-sm-6" data-animate>
+                            <article class="founder-card h-100">
+                                <div class="founder-photo">
+                                    <!-- change: Relinked Francisco portrait to original hosted photography -->
+                                    <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&amp;fit=crop&amp;w=640&amp;q=80" alt="Retrato ilustrativo de Francisco Javier Castro Becerra" loading="lazy" decoding="async">
+                                </div>
+                                <div class="founder-content">
+                                    <h3 class="founder-name" data-i18n="founders.francisco.name">Francisco Javier Castro Becerra</h3>
+                                    <p class="founder-role" data-i18n="founders.francisco.role">Ingeniero electrónico y maker</p>
+                                    <p class="founder-bio" data-i18n="founders.francisco.bio">Cofundador encargado de fabricación rápida, iteración de hardware y soporte técnico inmediato.</p>
+                                    <a class="btn btn-outline-primary" href="https://www.linkedin.com/in/francisco-javier-castro-becerra-4215b4341/" target="_blank" rel="noopener" data-i18n="founders.linkedin">Conectar en LinkedIn</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Testimonios -->
     <section class="section-padding bg-light" id="testimonios">
         <div class="container">
@@ -227,7 +336,8 @@
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6" data-animate>
                     <h2 class="section-title" data-i18n="contact.title">Hablemos de tu próximo laboratorio</h2>
-                    <p class="section-subtitle" data-i18n="contact.subtitle">Escríbenos para recibir demostraciones, fichas técnicas o agendar un taller en tu colegio o academia.</p>
+                    <p class="section-subtitle" data-i18n="contact.subtitle">Escríbenos para recibir demostraciones fabricadas localmente, fichas técnicas o agendar un taller en tu colegio o academia.</p>
+                    <!-- change: Realigned contact copy with local manufacturing message -->
                     <div class="contact-info">
                         <div class="d-flex align-items-start gap-3">
                             <i class="bi bi-envelope-open"></i>
@@ -243,29 +353,49 @@
                                 <p class="mb-0" data-i18n="contact.locationValue">Santiago, Chile</p>
                             </div>
                         </div>
+                        <div class="team-links">
+                            <!-- change: Added team LinkedIn shortcuts with updated URLs -->
+                            <a href="https://www.linkedin.com/in/francisco-javier-castro-becerra-4215b4341/" class="team-link" aria-label="LinkedIn de Francisco Javier Castro Becerra" target="_blank" rel="noopener">
+                                <i class="bi bi-linkedin" aria-hidden="true"></i>
+                                <span>Francisco Javier Castro Becerra</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/fernanda-rojas-morales-870030315/" class="team-link" aria-label="LinkedIn de Fernanda Rojas Morales" target="_blank" rel="noopener">
+                                <i class="bi bi-linkedin" aria-hidden="true"></i>
+                                <span>Fernanda Rojas Morales</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6" data-animate>
-                    <form class="contact-form">
+                    <form class="contact-form" novalidate>
+                        <!-- change: Added accessible validation structure and form semantics -->
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <label for="name" class="form-label" data-i18n="form.nameLabel">Nombre</label>
-                                <input type="text" class="form-control" id="name" placeholder="Tu nombre" data-i18n-placeholder="form.namePlaceholder">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Tu nombre" data-i18n-placeholder="form.namePlaceholder" autocomplete="name" required aria-describedby="nameError nameHint" aria-invalid="false">
+                                <p class="form-hint" id="nameHint" data-i18n="form.nameHint">Cuéntanos quién lidera el proyecto.</p>
+                                <div class="form-error" id="nameError" role="alert"></div>
                             </div>
                             <div class="col-md-6">
                                 <label for="email" class="form-label" data-i18n="form.emailLabel">Correo</label>
-                                <input type="email" class="form-control" id="email" placeholder="nombre@correo.com" data-i18n-placeholder="form.emailPlaceholder">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="nombre@correo.com" data-i18n-placeholder="form.emailPlaceholder" autocomplete="email" required aria-describedby="emailError" aria-invalid="false">
+                                <div class="form-error" id="emailError" role="alert"></div>
                             </div>
                             <div class="col-12">
                                 <label for="institution" class="form-label" data-i18n="form.institutionLabel">Institución</label>
-                                <input type="text" class="form-control" id="institution" placeholder="Colegio, academia o laboratorio" data-i18n-placeholder="form.institutionPlaceholder">
+                                <input type="text" class="form-control" id="institution" name="organization" placeholder="Colegio, academia o laboratorio" data-i18n-placeholder="form.institutionPlaceholder" autocomplete="organization" required aria-describedby="institutionError" aria-invalid="false">
+                                <div class="form-error" id="institutionError" role="alert"></div>
                             </div>
                             <div class="col-12">
                                 <label for="message" class="form-label" data-i18n="form.messageLabel">Mensaje</label>
-                                <textarea class="form-control" id="message" rows="4" placeholder="Cuéntanos qué necesitas" data-i18n-placeholder="form.messagePlaceholder"></textarea>
+                                <textarea class="form-control" id="message" name="message" rows="4" placeholder="Cuéntanos qué necesitas" data-i18n-placeholder="form.messagePlaceholder" required aria-describedby="messageError" aria-invalid="false"></textarea>
+                                <div class="form-error" id="messageError" role="alert"></div>
                             </div>
                             <div class="col-12">
-                                <button type="submit" class="btn btn-primary btn-gradient w-100" data-i18n="form.submit">Enviar</button>
+                                <button type="submit" class="btn btn-primary w-100" data-loading-text="Enviando..." data-i18n="form.submit">Enviar</button>
+                            </div>
+                            <div class="col-12">
+                                <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
                             </div>
                         </div>
                     </form>
@@ -280,7 +410,8 @@
             <div class="row g-4 align-items-center">
                 <div class="col-md-4 text-center text-md-start">
                     <a class="navbar-brand d-inline-flex align-items-center" href="#inicio">
-                        <img src="assets/logo.png" alt="BioSync" class="logo me-2">
+                        <img src="assets/Logo.png" alt="Logotipo de BioSync" class="logo me-2">
+                        <!-- change: Synced footer logo reference and alt text -->
                         <span class="fw-semibold">BioSync</span>
                     </a>
                     <p class="mt-3 small" data-i18n="footer.description">Fabricamos ecosistemas científicos accesibles para despertar vocaciones STEM en toda Latinoamérica.</p>
@@ -289,15 +420,18 @@
                     <ul class="list-unstyled mb-0 footer-links">
                         <li><a href="#inicio" data-i18n="footer.home">Inicio</a></li>
                         <li><a href="#kits" data-i18n="footer.kits">Kits</a></li>
+                        <!-- change: Linked footer navigation to new founders spotlight -->
+                        <li><a href="#creadores" data-i18n="footer.team">Creadores</a></li>
                         <li><a href="#sobre" data-i18n="footer.about">Sobre Nosotros</a></li>
                         <li><a href="#contacto" data-i18n="footer.contact">Contacto</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 text-center text-md-end">
                     <div class="social-links">
-                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-                        <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <!-- change: Replaced placeholder social URLs with live profiles -->
+                        <a href="https://www.instagram.com/biosync.cl/" aria-label="Instagram de BioSync" target="_blank" rel="noopener"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.youtube.com/@biosync" aria-label="YouTube de BioSync" target="_blank" rel="noopener"><i class="bi bi-youtube"></i></a>
+                        <a href="https://www.linkedin.com/company/biosync-cl/" aria-label="LinkedIn de BioSync" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
                     </div>
                     <p class="mt-3 small">© <span id="currentYear"></span> BioSync. <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
                 </div>
