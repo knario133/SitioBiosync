@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BioSync fabrica kits y biorreactores educativos para inspirar a niños y jóvenes científicos en toda Latinoamérica.">
+    <title>BioSync | Ciencia viva para mentes jóvenes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top shadow-sm" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#inicio">
+                <img src="assets/logo.png" alt="BioSync" class="logo me-2">
+                <span class="fw-semibold">BioSync</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="#inicio" data-i18n="nav.home">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kits" data-i18n="nav.kits">Kits</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre" data-i18n="nav.about">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto" data-i18n="nav.contact">Contacto</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-primary btn-gradient" href="#kits" data-i18n="nav.cta">Comprar Ahora</a>
+                    </li>
+                </ul>
+                <div class="language-switcher ms-lg-4" role="group" aria-label="Selector de idioma">
+                    <button class="btn btn-sm btn-lang active" type="button" data-lang="es" aria-label="Cambiar a español" aria-pressed="true">ES</button>
+                    <button class="btn btn-sm btn-lang" type="button" data-lang="en" aria-label="Switch to English" aria-pressed="false">EN</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="inicio">
+        <div class="hero-overlay"></div>
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-6 text-white hero-content" data-animate>
+                    <span class="badge rounded-pill bg-highlight mb-3" data-i18n="hero.badge">Educación científica accesible</span>
+                    <h1 class="display-4 fw-bold" data-i18n="hero.title">Ciencia viva para mentes jóvenes</h1>
+                    <p class="lead" data-i18n="hero.subtitle">En BioSync creemos que la ciencia debe ser accesible, inspiradora y cercana a quienes serán los futuros innovadores de nuestra región.</p>
+                    <div class="d-flex flex-column flex-sm-row gap-3">
+                        <a href="#kits" class="btn btn-lg btn-primary btn-gradient" data-i18n="hero.primaryCta">Explorar kits</a>
+                        <a href="#sobre" class="btn btn-lg btn-outline-light" data-i18n="hero.secondaryCta">Nuestra misión</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 ms-lg-auto hero-card" data-animate>
+                    <div class="glass-card p-4">
+                        <h2 class="h4" data-i18n="hero.card.title">Biorreactor educativo</h2>
+                        <p data-i18n="hero.card.description">Un prototipo seguro y didáctico para que estudiantes comprendan procesos de biotecnología y microbiología con experimentos reales en el aula.</p>
+                        <ul class="list-unstyled mb-4">
+                            <li><i class="bi bi-lightbulb me-2"></i><span data-i18n="hero.card.feature1">Diseño creado en Chile para más acceso y menor costo.</span></li>
+                            <li><i class="bi bi-shield-check me-2"></i><span data-i18n="hero.card.feature2">Soporte local inmediato y mejoras a medida.</span></li>
+                            <li><i class="bi bi-globe2 me-2"></i><span data-i18n="hero.card.feature3">Componentes impresos en 3D y PCB propias sin tiempos de espera.</span></li>
+                        </ul>
+                        <a href="#kits" class="btn btn-outline-primary" data-i18n="hero.card.button">Descubrir más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Productos Destacados -->
+    <section class="section-padding bg-light" id="kits">
+        <div class="container">
+            <div class="text-center mb-5" data-animate>
+                <span class="section-badge" data-i18n="products.badge">Nuestros Kits Estrella</span>
+                <h2 class="section-title" data-i18n="products.title">Experimenta, construye y comparte descubrimientos</h2>
+                <p class="section-subtitle" data-i18n="products.subtitle">Equipos pensados para escuelas, academias STEM y laboratorios juveniles que buscan experimentar sin barreras.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3" data-animate>
+                    <div class="card product-card h-100">
+                        <img src="https://images.unsplash.com/photo-1582719478450-ef19c89b56ba?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Kit BioExplorer">
+                        <div class="card-body">
+                            <h3 class="h5">Kit BioExplorer</h3>
+                            <p class="card-text" data-i18n="products.kit1.description">Introduce conceptos clave de cultivo celular con actividades guiadas para aulas de enseñanza media.</p>
+                            <a href="#contacto" class="btn btn-outline-primary stretched-link" data-i18n="products.cta">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-animate>
+                    <div class="card product-card h-100">
+                        <img src="https://images.unsplash.com/photo-1604882350920-6d438d9d8f15?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Kit MakerLab">
+                        <div class="card-body">
+                            <h3 class="h5">Kit MakerLab</h3>
+                            <p class="card-text" data-i18n="products.kit2.description">Componentes modulares para construir mini biorreactores y aprender sobre sensores, control y automatización.</p>
+                            <a href="#contacto" class="btn btn-outline-primary stretched-link" data-i18n="products.cta">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-animate>
+                    <div class="card product-card h-100">
+                        <img src="https://images.unsplash.com/photo-1519300615460-998716f27858?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Kit ProCulture">
+                        <div class="card-body">
+                            <h3 class="h5">Kit ProCulture</h3>
+                            <p class="card-text" data-i18n="products.kit3.description">Incluye software educativo para monitoreo de datos en vivo y experimentos colaborativos entre escuelas.</p>
+                            <a href="#contacto" class="btn btn-outline-primary stretched-link" data-i18n="products.cta">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-animate>
+                    <div class="card product-card h-100">
+                        <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Kit DataSync">
+                        <div class="card-body">
+                            <h3 class="h5">Kit DataSync</h3>
+                            <p class="card-text" data-i18n="products.kit4.description">Plataforma digital para registrar experimentos, compartir resultados y construir comunidad científica joven.</p>
+                            <a href="#contacto" class="btn btn-outline-primary stretched-link" data-i18n="products.cta">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Por qué BioSync -->
+    <section class="section-padding" id="sobre">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6" data-animate>
+                    <span class="section-badge" data-i18n="why.badge">Por qué BioSync</span>
+                    <h2 class="section-title" data-i18n="why.title">Fabricamos en Chile para democratizar la biotecnología educativa</h2>
+                    <p class="section-subtitle" data-i18n="why.subtitle">Transformamos un mercado elitista en uno abierto y dinámico mediante fabricación aditiva y soporte local.</p>
+                    <div class="row g-4 mt-2">
+                        <div class="col-12 col-sm-6">
+                            <div class="value-card">
+                                <div class="icon-circle">
+                                    <i class="bi bi-rocket-takeoff"></i>
+                                </div>
+                                <h3 class="h6" data-i18n="why.value1.title">Innovación ágil</h3>
+                                <p data-i18n="why.value1.text">Mejoras rápidas y a medida gracias a impresión 3D y PCB propias.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="value-card">
+                                <div class="icon-circle">
+                                    <i class="bi bi-people"></i>
+                                </div>
+                                <h3 class="h6" data-i18n="why.value2.title">Soporte cercano</h3>
+                                <p data-i18n="why.value2.text">Soporte local inmediato con repuestos al instante y acompañamiento docente.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="value-card">
+                                <div class="icon-circle">
+                                    <i class="bi bi-bank"></i>
+                                </div>
+                                <h3 class="h6" data-i18n="why.value3.title">Accesibilidad real</h3>
+                                <p data-i18n="why.value3.text">Reducimos costos eliminando importaciones y tiempos de espera.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="value-card">
+                                <div class="icon-circle">
+                                    <i class="bi bi-stars"></i>
+                                </div>
+                                <h3 class="h6" data-i18n="why.value4.title">Vocación educativa</h3>
+                                <p data-i18n="why.value4.text">Inspiramos vocaciones STEM con experiencias científicas vivas y colaborativas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-animate>
+                    <div class="mission-card">
+                        <h3 class="h4" data-i18n="mission.title">Nuestra misión</h3>
+                        <p data-i18n="mission.description">Impulsar que cada estudiante latinoamericano tenga acceso real a la experimentación científica, despertando curiosidad y habilidades STEM desde el aula.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-check-circle-fill me-2"></i><span data-i18n="mission.point1">Laboratorios escolares y universitarios como espacios vivos de descubrimiento.</span></li>
+                            <li><i class="bi bi-check-circle-fill me-2"></i><span data-i18n="mission.point2">Equipamiento flexible para docentes con recursos limitados.</span></li>
+                            <li><i class="bi bi-check-circle-fill me-2"></i><span data-i18n="mission.point3">Comunidad que comparte datos y aprendizajes sin barreras.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="section-padding bg-light" id="testimonios">
+        <div class="container">
+            <div class="text-center mb-5" data-animate>
+                <span class="section-badge" data-i18n="testimonials.badge">Historias reales</span>
+                <h2 class="section-title" data-i18n="testimonials.title">La inspiración detrás de BioSync</h2>
+            </div>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-animate>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="testimonial-card mx-auto">
+                            <p class="testimonial-text" data-i18n="testimonials.quote1">“Si unas zapatillas hacen que un niño sueñe con ser futbolista, un biorreactor accesible puede hacer que sueñe con ser científico.”</p>
+                            <h3 class="testimonial-author" data-i18n="testimonials.author1">Equipo BioSync</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-card mx-auto">
+                            <p class="testimonial-text" data-i18n="testimonials.quote2">“Nuestro prototipo de biorreactor educativo despierta curiosidad y acerca procesos biotecnológicos a estudiantes que nunca habían experimentado con ellos.”</p>
+                            <h3 class="testimonial-author" data-i18n="testimonials.author2">Fernanda Rojas Morales</h3>
+                            <span class="testimonial-role" data-i18n="testimonials.role2">Bióloga • Ganadora Endowment Emprendimiento Innovador (UNAB)</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden" data-i18n="carousel.prev">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden" data-i18n="carousel.next">Siguiente</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="section-padding contact-section" id="contacto">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6" data-animate>
+                    <h2 class="section-title" data-i18n="contact.title">Hablemos de tu próximo laboratorio</h2>
+                    <p class="section-subtitle" data-i18n="contact.subtitle">Escríbenos para recibir demostraciones, fichas técnicas o agendar un taller en tu colegio o academia.</p>
+                    <div class="contact-info">
+                        <div class="d-flex align-items-start gap-3">
+                            <i class="bi bi-envelope-open"></i>
+                            <div>
+                                <h3 class="h6 mb-1" data-i18n="contact.emailLabel">Correo</h3>
+                                <p class="mb-0" data-i18n="contact.emailValue">contacto@biosync.cl</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start gap-3">
+                            <i class="bi bi-geo-alt"></i>
+                            <div>
+                                <h3 class="h6 mb-1" data-i18n="contact.locationLabel">Base</h3>
+                                <p class="mb-0" data-i18n="contact.locationValue">Santiago, Chile</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-animate>
+                    <form class="contact-form">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label" data-i18n="form.nameLabel">Nombre</label>
+                                <input type="text" class="form-control" id="name" placeholder="Tu nombre" data-i18n-placeholder="form.namePlaceholder">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label" data-i18n="form.emailLabel">Correo</label>
+                                <input type="email" class="form-control" id="email" placeholder="nombre@correo.com" data-i18n-placeholder="form.emailPlaceholder">
+                            </div>
+                            <div class="col-12">
+                                <label for="institution" class="form-label" data-i18n="form.institutionLabel">Institución</label>
+                                <input type="text" class="form-control" id="institution" placeholder="Colegio, academia o laboratorio" data-i18n-placeholder="form.institutionPlaceholder">
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label" data-i18n="form.messageLabel">Mensaje</label>
+                                <textarea class="form-control" id="message" rows="4" placeholder="Cuéntanos qué necesitas" data-i18n-placeholder="form.messagePlaceholder"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary btn-gradient w-100" data-i18n="form.submit">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-4 text-center text-md-start">
+                    <a class="navbar-brand d-inline-flex align-items-center" href="#inicio">
+                        <img src="assets/logo.png" alt="BioSync" class="logo me-2">
+                        <span class="fw-semibold">BioSync</span>
+                    </a>
+                    <p class="mt-3 small" data-i18n="footer.description">Fabricamos ecosistemas científicos accesibles para despertar vocaciones STEM en toda Latinoamérica.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <ul class="list-unstyled mb-0 footer-links">
+                        <li><a href="#inicio" data-i18n="footer.home">Inicio</a></li>
+                        <li><a href="#kits" data-i18n="footer.kits">Kits</a></li>
+                        <li><a href="#sobre" data-i18n="footer.about">Sobre Nosotros</a></li>
+                        <li><a href="#contacto" data-i18n="footer.contact">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-center text-md-end">
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                    <p class="mt-3 small">© <span id="currentYear"></span> BioSync. <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
