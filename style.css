@@ -159,6 +159,8 @@ a:focus-visible {
     transition: background-color var(--brand-transition), box-shadow var(--brand-transition);
     padding-top: 1rem;
     padding-bottom: 1rem;
+    /* change: Elevated overall header typography for improved readability */
+    font-size: 1.05rem;
 }
 
 .navbar.scrolled {
@@ -170,12 +172,19 @@ a:focus-visible {
     height: 44px;
     object-fit: contain;
 }
+.navbar-brand span {
+    /* change: Enlarged brand wordmark in header */
+    font-size: 1.5rem;
+    font-weight: 700;
+}
 
 .nav-link {
     font-weight: 500;
     color: var(--brand-gray-900) !important;
     position: relative;
     padding: 0.5rem 1rem !important;
+    /* change: Increased header link size for better legibility */
+    font-size: 1.05rem;
 }
 
 .nav-link::after {
@@ -410,6 +419,65 @@ a:focus-visible {
     gap: 0.5rem;
 }
 
+.partners-section {
+    /* change: Styled collaboration area with subtle gradient background */
+    background: linear-gradient(135deg, rgba(34, 155, 131, 0.06), rgba(18, 93, 151, 0.04));
+}
+
+.partner-card {
+    /* change: Crafted partner callout card to align with global card system */
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    border-radius: var(--brand-radius-lg);
+    background-color: #ffffff;
+    box-shadow: var(--brand-shadow-card);
+    transition: transform var(--brand-transition), box-shadow var(--brand-transition);
+}
+
+.partner-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--brand-shadow-card-strong);
+}
+
+.partner-logo {
+    /* change: Ensured logo container keeps consistent sizing */
+    flex: 0 0 128px;
+    width: 128px;
+    height: 128px;
+}
+
+.partner-logo svg {
+    width: 100%;
+    height: 100%;
+    border-radius: 32px;
+    box-shadow: 0 10px 20px rgba(16, 24, 40, 0.12);
+}
+
+.partner-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.partner-name {
+    font-weight: 600;
+    color: var(--brand-gray-900);
+    margin: 0;
+}
+
+.partner-link {
+    color: var(--brand-blue-600);
+    font-weight: 500;
+    margin: 0;
+}
+
+.partner-card:focus-visible {
+    outline: 3px solid var(--brand-green-400);
+    outline-offset: 4px;
+}
+
 .icon-circle {
     width: 56px;
     height: 56px;
@@ -441,6 +509,65 @@ a:focus-visible {
     margin-top: 1.5rem;
     font-weight: 600;
     color: var(--brand-blue-600);
+}
+
+/* change: Styled founders section cards to align with product visuals */
+.creators-section {
+    background: radial-gradient(circle at top left, rgba(34, 155, 131, 0.08), transparent 55%);
+}
+
+.founder-card {
+    background: #ffffff;
+    border-radius: var(--brand-radius-lg);
+    box-shadow: var(--brand-shadow-card);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100%;
+    transition: transform var(--brand-transition), box-shadow var(--brand-transition);
+}
+
+.founder-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--brand-shadow-card-strong);
+}
+
+.founder-photo {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+}
+
+.founder-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.founder-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1.75rem;
+}
+
+.founder-name {
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.founder-role {
+    color: var(--brand-gray-600);
+    font-weight: 500;
+}
+
+.founder-bio {
+    flex: 1;
+}
+
+.founder-card .btn {
+    align-self: flex-start;
 }
 
 .testimonial-role {
@@ -614,6 +741,23 @@ a:focus-visible {
 
     .language-switcher {
         margin-top: 1rem;
+    }
+
+    .partner-card {
+        /* change: Stack partner card content on small screens */
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .partner-copy {
+        align-items: center;
+        text-align: center;
+    }
+
+    .partner-logo {
+        width: 104px;
+        height: 104px;
     }
 }
 
