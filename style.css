@@ -159,6 +159,8 @@ a:focus-visible {
     transition: background-color var(--brand-transition), box-shadow var(--brand-transition);
     padding-top: 1rem;
     padding-bottom: 1rem;
+    /* change: Elevated overall header typography for improved readability */
+    font-size: 1.05rem;
 }
 
 .navbar.scrolled {
@@ -170,12 +172,19 @@ a:focus-visible {
     height: 44px;
     object-fit: contain;
 }
+.navbar-brand span {
+    /* change: Enlarged brand wordmark in header */
+    font-size: 1.5rem;
+    font-weight: 700;
+}
 
 .nav-link {
     font-weight: 500;
     color: var(--brand-gray-900) !important;
     position: relative;
     padding: 0.5rem 1rem !important;
+    /* change: Increased header link size for better legibility */
+    font-size: 1.05rem;
 }
 
 .nav-link::after {
