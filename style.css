@@ -267,6 +267,16 @@ a:focus-visible {
     gap: 1rem;
 }
 
+.hero-copy-panel {
+    /* change: Added translucent dark panel to enhance hero text legibility */
+    backdrop-filter: blur(16px);
+    background: rgba(15, 24, 54, 0.58);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: var(--brand-radius-lg);
+    padding: clamp(1.5rem, 4vw, 2.25rem);
+    box-shadow: var(--brand-shadow-card);
+}
+
 .hero-content .lead {
     color: #f4f6fb;
     font-weight: 500;
