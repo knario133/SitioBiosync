@@ -168,18 +168,20 @@ a:focus-visible {
 }
 
 .navbar-brand .logo {
-    width: 44px;
-    height: 44px;
+    width: 56px;
+    height: 56px;
     object-fit: contain;
-    background-color: rgba(255, 255, 255, 0.95);
-    border-radius: 12px;
-    padding: 4px;
-    box-shadow: 0 8px 18px rgba(16, 24, 40, 0.16);
+    background-color: rgba(255, 255, 255, 0.98);
+    border-radius: 16px;
+    padding: 6px;
+    border: 2px solid rgba(18, 93, 151, 0.15);
+    box-shadow: 0 12px 26px rgba(16, 24, 40, 0.18);
 }
 .navbar-brand span {
     /* change: Enlarged brand wordmark in header */
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-weight: 700;
+    letter-spacing: 0.01em;
 }
 
 .nav-link {
@@ -359,6 +361,71 @@ a:focus-visible {
     background-color: #ffffff;
     color: var(--brand-blue-600);
     border-color: #ffffff;
+}
+
+/* change: Highlighted bioreactor explainer section */
+.bioreactor-section {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(18, 93, 151, 0.04) 55%, rgba(34, 155, 131, 0.08));
+}
+
+.bio-benefits li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    color: var(--brand-gray-600);
+}
+
+.bio-benefits i {
+    font-size: 1.5rem;
+    color: var(--brand-green-500);
+    margin-top: 0.1rem;
+}
+
+.bio-card {
+    background: #ffffff;
+    border-radius: var(--brand-radius-lg);
+    box-shadow: var(--brand-shadow-card);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform var(--brand-transition), box-shadow var(--brand-transition);
+}
+
+.bio-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--brand-shadow-card-strong);
+}
+
+.bio-card-media {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+}
+
+.bio-card-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bio-card-body {
+    padding: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.bio-credit {
+    font-size: 0.85rem;
+    color: var(--brand-blue-600);
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.bio-credit:hover {
+    color: var(--brand-blue-700);
 }
 
 /* change: Unified section headers */
@@ -547,6 +614,24 @@ a:focus-visible {
     margin-top: 1.5rem;
     font-weight: 600;
     color: var(--brand-blue-600);
+}
+
+#testimonialCarousel {
+    overflow: visible;
+}
+
+#testimonialCarousel .carousel-inner {
+    padding: 1.5rem 0 2rem;
+    overflow: visible;
+}
+
+#testimonialCarousel .carousel-item {
+    display: flex;
+    justify-content: center;
+}
+
+#testimonialCarousel .testimonial-card {
+    margin: 0 1rem;
 }
 
 /* change: Styled founders section cards to align with product visuals */
@@ -775,6 +860,14 @@ a:focus-visible {
 
     .testimonial-card {
         padding: 2.25rem 1.75rem;
+    }
+
+    .bio-card-body {
+        padding: 1.5rem;
+    }
+
+    .bio-benefits li {
+        align-items: center;
     }
 
     .language-switcher {
