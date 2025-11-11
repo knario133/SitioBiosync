@@ -43,6 +43,7 @@
                     <li class="nav-item"><a class="nav-link" href="#inicio" data-i18n="nav.home">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#biorreactor" data-i18n="nav.bioreactor">Biorreactor</a></li>
                     <li class="nav-item"><a class="nav-link" href="#kits" data-i18n="nav.kits">Kits</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#recursos" data-i18n="nav.resources">Recursos</a></li>
                     <!-- change: Added navigation access to the founders spotlight section -->
                     <li class="nav-item"><a class="nav-link" href="#creadores" data-i18n="nav.team">Creadores</a></li>
                     <li class="nav-item"><a class="nav-link" href="#sobre" data-i18n="nav.about">Sobre Nosotros</a></li>
@@ -61,7 +62,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero" id="inicio">
+    <header class="hero" id="inicio" aria-label="Estudiante usando biorreactor BioSync">
         <div class="hero-overlay"></div>
         <div class="container h-100">
             <div class="row h-100 align-items-center">
@@ -102,7 +103,8 @@
                 <div class="col-lg-6" data-animate>
                     <span class="section-badge" data-i18n="bio.badge">¿Qué es un biorreactor?</span>
                     <h2 class="section-title" data-i18n="bio.title">Un laboratorio vivo en formato compacto</h2>
-                    <p class="section-subtitle text-start" data-i18n="bio.subtitle">Un biorreactor controla luz, temperatura, gases y agitación para crear las condiciones ideales donde microorganismos, tejidos o cultivos celulares se desarrollan con seguridad y reproducibilidad.</p>
+                    <p class="section-subtitle text-start" data-i18n="bio.subtitle">Un biorreactor controla luz, temperatura y agitación de cultivos para crear las condiciones ideales donde microorganismos, tejidos o cultivos celulares se desarrollan con seguridad y reproducibilidad. Estos controles permiten realizar experimentos sobre fotosíntesis, fermentación y otros procesos biológicos.</p>
+                    <p class="text-muted small">Nota: La funcionalidad de monitoreo de gases está en desarrollo y se incorporará en versiones futuras.</p>
                     <ul class="bio-benefits list-unstyled mt-4">
                         <li>
                             <i class="bi bi-activity" aria-hidden="true"></i>
@@ -147,14 +149,52 @@
                         <div class="col-12" data-animate>
                             <article class="bio-card h-100">
                                 <div class="bio-card-media">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Algal_cultures_%2851160010381%29.jpg" alt="Cultivos de algas iluminados para producción sostenible (imagen con licencia CC BY 2.0 en Wikimedia Commons)" loading="lazy" decoding="async">
+                                    <img src="pics/Copilot_20251105_140108.png" alt="Científica operando el biorreactor" title="Científica operando el biorreactor" loading="lazy" decoding="async">
                                 </div>
                                 <div class="bio-card-body">
                                     <h3 class="h5" data-i18n="bio.card3.title">Para organizaciones y clientes</h3>
                                     <p class="mb-3" data-i18n="bio.card3.text">Validan prototipos de bioinsumos, alimentos o cosmética mientras comparan rendimientos y calidad de manera confiable.</p>
-                                    <a class="bio-credit" href="https://commons.wikimedia.org/wiki/File:Algal_cultures_(51160010381).jpg" target="_blank" rel="noopener" data-i18n="bio.card3.credit">Imagen de Wikimedia Commons (CC BY 2.0)</a>
                                 </div>
                             </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Recursos para docentes -->
+    <section class="section-padding bg-light" id="recursos">
+        <div class="container">
+            <div class="text-center mb-5" data-animate>
+                <span class="section-badge" data-i18n="resources.badge">Recursos para docentes</span>
+                <h2 class="section-title" data-i18n="resources.title">Guías y protocolos para el aula</h2>
+                <p class="section-subtitle" data-i18n="resources.subtitle">Descarga nuestros recursos educativos para sacar el máximo provecho a tu biorreactor BioSync.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4" data-animate>
+                    <div class="card product-card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="h5">Guía de Fotosíntesis</h3>
+                            <p class="card-text">Protocolos para experimentos de fotosíntesis con microalgas. Incluye objetivos de aprendizaje del MINEDUC.</p>
+                            <a href="#" class="btn btn-outline-primary mt-auto align-self-start" download>Descargar PDF</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-animate>
+                    <div class="card product-card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="h5">Guía de Fermentación</h3>
+                            <p class="card-text">Protocolos para experimentos de fermentación con levaduras. Incluye objetivos de aprendizaje del MINEDUC.</p>
+                            <a href="#" class="btn btn-outline-primary mt-auto align-self-start" download>Descargar PDF</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-animate>
+                    <div class="card product-card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="h5">Proyectos de Diseño Tecnológico</h3>
+                            <p class="card-text">Ideas y guías para que los estudiantes diseñen y construyan sus propios proyectos con el biorreactor.</p>
+                            <a href="#" class="btn btn-outline-primary mt-auto align-self-start" download>Descargar PDF</a>
                         </div>
                     </div>
                 </div>
@@ -174,13 +214,14 @@
             <div class="row g-4">
                 <div class="col-md-6 col-lg-3" data-animate>
                     <div class="card product-card h-100">
-                        <!-- change: Restored remote kit imagery to rely on original hosted sources -->
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Biotechnology_lab.jpg" class="card-img-top" alt="Estudiantes trabajando en un laboratorio de biotecnología (imagen con licencia CC BY-SA 4.0 en Wikimedia Commons)" loading="lazy" decoding="async">
+                        <figure class="mb-0">
+                            <img src="pics/Copilot_20251013_153701.png" class="card-img-top" alt="Estudiante utilizando el biorreactor en un aula" loading="lazy" decoding="async">
+                            <figcaption class="figure-caption text-center p-2">Estudiante en aula utilizando el biorreactor.</figcaption>
+                        </figure>
                         <div class="card-body d-flex flex-column">
-                            <!-- change: Normalized kit card layout and CTA alignment -->
                             <h3 class="h5">Kit BioExplorer</h3>
                             <p class="card-text" data-i18n="products.kit1.description">Introduce conceptos clave de cultivo celular con actividades guiadas para aulas de enseñanza media.</p>
-                            <a href="#contacto" class="btn btn-outline-primary mt-auto align-self-start" data-i18n="products.cta">Ver más</a>
+                            <a href="#contacto" class="btn btn-primary mt-auto align-self-start">Solicitar demostración</a>
                         </div>
                     </div>
                 </div>
@@ -192,7 +233,7 @@
                             <!-- change: Normalized kit card layout and CTA alignment -->
                             <h3 class="h5">Kit MakerLab</h3>
                             <p class="card-text" data-i18n="products.kit2.description">Componentes modulares para construir mini biorreactores y aprender sobre sensores, control y automatización.</p>
-                            <a href="#contacto" class="btn btn-outline-primary mt-auto align-self-start" data-i18n="products.cta">Ver más</a>
+                            <a href="#contacto" class="btn btn-primary mt-auto align-self-start">Solicitar demostración</a>
                         </div>
                     </div>
                 </div>
@@ -204,7 +245,7 @@
                             <!-- change: Normalized kit card layout and CTA alignment -->
                             <h3 class="h5">Kit ProCulture</h3>
                             <p class="card-text" data-i18n="products.kit3.description">Incluye software educativo para monitoreo de datos en vivo y experimentos colaborativos entre escuelas.</p>
-                            <a href="#contacto" class="btn btn-outline-primary mt-auto align-self-start" data-i18n="products.cta">Ver más</a>
+                            <a href="#contacto" class="btn btn-primary mt-auto align-self-start">Solicitar demostración</a>
                         </div>
                     </div>
                 </div>
@@ -213,10 +254,19 @@
                         <!-- change: Restored remote kit imagery to rely on original hosted sources -->
                         <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Education_robots_are_playing_football.JPG" class="card-img-top" alt="Robots educativos compitiendo en un partido amistoso (imagen con licencia CC BY-SA 3.0 en Wikimedia Commons)" loading="lazy" decoding="async">
                         <div class="card-body d-flex flex-column">
-                            <!-- change: Normalized kit card layout and CTA alignment -->
                             <h3 class="h5">Kit DataSync</h3>
                             <p class="card-text" data-i18n="products.kit4.description">Plataforma digital para registrar experimentos, compartir resultados y construir comunidad científica joven.</p>
-                            <a href="#contacto" class="btn btn-outline-primary mt-auto align-self-start" data-i18n="products.cta">Ver más</a>
+                            <a href="#contacto" class="btn btn-primary mt-auto align-self-start">Solicitar demostración</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-animate>
+                    <div class="card product-card h-100">
+                        <img src="pics/Diseño sin título (3).png" class="card-img-top" alt="Banner promocional de BioSync" loading="lazy" decoding="async">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="h5">Material Promocional</h3>
+                            <p class="card-text">Descubre cómo nuestros kits pueden transformar tu aula. ¡Contáctanos para más información!</p>
+                            <a href="#contacto" class="btn btn-primary mt-auto align-self-start">Contáctanos</a>
                         </div>
                     </div>
                 </div>
@@ -376,6 +426,14 @@
                             <p class="testimonial-text" data-i18n="testimonials.quote2">“Nuestro prototipo de biorreactor educativo despierta curiosidad y acerca procesos biotecnológicos a estudiantes que nunca habían experimentado con ellos.”</p>
                             <h3 class="testimonial-author" data-i18n="testimonials.author2">Fernanda Rojas Morales</h3>
                             <span class="testimonial-role" data-i18n="testimonials.role2">Bióloga • Ganadora Endowment Emprendimiento Innovador (UNAB)</span>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-card mx-auto">
+                            <img src="pics/Copilot_20251013_153701.png" class="card-img-top mb-3" alt="Estudiante utilizando el biorreactor en un aula" loading="lazy" decoding="async">
+                            <p class="testimonial-text">“Los estudiantes estaban fascinados. Ver la ciencia en acción de esta manera es mucho más impactante que leerla en un libro.”</p>
+                            <h3 class="testimonial-author">Docente de Ciencias</h3>
+                            <span class="testimonial-role">Colegio San José</span>
                         </div>
                     </div>
                 </div>
