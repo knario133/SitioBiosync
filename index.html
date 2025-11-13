@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="BioSync diseña kits y biorreactores educativos fabricados en Chile para democratizar la biotecnología con soporte local e iteración rápida.">
     <!-- change: Added favicon and comprehensive social metadata for BioSync -->
-    <link rel="icon" type="image/png" href="assets/Logo.png">
+    <!-- Actualizado para usar el nuevo logotipo proporcionado -->
+    <link rel="icon" type="image/png" href="Logo.png">
     <meta property="og:title" content="BioSync | Ciencia viva para mentes jóvenes">
     <meta property="og:description" content="Kits y biorreactores educativos fabricados en Chile con soporte inmediato y mejoras a medida.">
     <meta property="og:image" content="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=1200&q=80&fm=webp">
@@ -25,15 +26,55 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <!-- change: Linked updated brand stylesheet -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- custom style adjustments for logo size and transparency in navbar -->
+    <style>
+        /* Ajusta el tamaño del logo en la barra de navegación y elimina cualquier fondo blanco */
+        .navbar-brand .logo {
+            width: 64px;
+            height: auto;
+            background-color: transparent;
+            border-radius: 0;
+        }
+
+        /* Estilo personalizado para el navbar para asemejarlo a la imagen de referencia */
+        #mainNav {
+            background-color: #ffffff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        #mainNav .nav-link {
+            color: #152238;
+            font-weight: 500;
+            margin-right: 1rem;
+            position: relative;
+        }
+        /* Línea destacada al pasar el mouse o cuando está activa */
+        #mainNav .nav-link:hover::after,
+        #mainNav .nav-link.active::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -4px;
+            height: 3px;
+            background-color: #007bff;
+        }
+    </style>
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top shadow-sm" id="mainNav">
+    <nav class="navbar navbar-expand-lg fixed-top shadow-sm" id="mainNav" style="
+    padding-top: 0px;
+    padding-bottom: 0px;
+">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="#inicio">
-                <img src="assets/Logo.png" alt="Logotipo de BioSync" class="logo me-2">
+                <img src="pics/Logo.png" alt="Logotipo de BioSync" class="logo me-2">
                 <!-- change: Corrected logo reference and improved alt text -->
-                <span class="fw-semibold">BioSync</span>
+       
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -66,7 +107,7 @@
         <div class="hero-overlay"></div>
         <div class="container h-100">
             <div class="row h-100 align-items-center">
-                <div class="col-lg-6 text-white hero-content" data-animate>
+                <div class="col-lg-6 text-white hero-content animated" data-animate>
                     <!-- change: Wrapped hero copy with translucent panel for improved contrast -->
                     <div class="hero-copy-panel">
                         <span class="badge rounded-pill bg-highlight mb-3" data-i18n="hero.badge">Educación científica accesible</span>
@@ -79,7 +120,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5 ms-lg-auto hero-card" data-animate>
+                <div class="col-lg-5 ms-lg-auto hero-card animated" data-animate>
                     <div class="hero-info-card p-4">
                         <!-- change: Reworked hero info card to improve readability across breakpoints -->
                         <h2 class="h4" data-i18n="hero.card.title">Biorreactor educativo</h2>
@@ -98,9 +139,9 @@
 
     <!-- Qué es un biorreactor -->
     <section class="section-padding bioreactor-section" id="biorreactor">
-        <div class="container">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-6" data-animate>
+        <div class="container h-100">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 col-lg-4" data-animate>
                     <span class="section-badge" data-i18n="bio.badge">¿Qué es un biorreactor?</span>
                     <h2 class="section-title" data-i18n="bio.title">Un laboratorio vivo en formato compacto</h2>
                     <p class="section-subtitle text-start" data-i18n="bio.subtitle">Un biorreactor controla luz, temperatura y agitación de cultivos para crear las condiciones ideales donde microorganismos, tejidos o cultivos celulares se desarrollan con seguridad y reproducibilidad. Estos controles permiten realizar experimentos sobre fotosíntesis, fermentación y otros procesos biológicos.</p>
@@ -120,36 +161,37 @@
                         </li>
                     </ul>
                 </div>
+				</div>
+				<div class="row g-5 align-items-center">
                 <div class="col-lg-6">
-                    <div class="row g-4">
-                        <div class="col-sm-6" data-animate>
+                    <!-- Ajuste de columnas para distribuir de forma uniforme las tarjetas y evitar espacios vacíos -->
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+                        <div class="col" data-animate>
                             <article class="bio-card h-100">
                                 <div class="bio-card-media">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Bioreactor_for_cell_culture_in_the_laboratory.jpg" alt="Biorreactor de cultivo celular sobre una mesa de laboratorio (imagen con licencia CC BY-SA 4.0 en Wikimedia Commons)" loading="lazy" decoding="async">
+                                    <img src="pics/hipster.jpg" alt="Biorreactor de cultivo celular sobre una mesa de laboratorio (imagen con licencia CC BY-SA 4.0 en Wikimedia Commons)" loading="lazy" decoding="async">
                                 </div>
                                 <div class="bio-card-body">
                                     <h3 class="h5" data-i18n="bio.card1.title">Para curiosos y makers</h3>
                                     <p class="mb-3" data-i18n="bio.card1.text">Exploran fermentaciones, producen biomateriales caseros o cultivan algas para biofabricación a pequeña escala.</p>
-                                    <a class="bio-credit" href="https://commons.wikimedia.org/wiki/File:Bioreactor_for_cell_culture_in_the_laboratory.jpg" target="_blank" rel="noopener" data-i18n="bio.card1.credit">Imagen de Wikimedia Commons (CC BY-SA 4.0)</a>
                                 </div>
                             </article>
                         </div>
-                        <div class="col-sm-6" data-animate>
+                        <div class="col" data-animate>
                             <article class="bio-card h-100">
                                 <div class="bio-card-media">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Pg166_bioreactor.jpg" alt="Estudiantes observando un biorreactor piloto en un laboratorio educativo (imagen con licencia CC BY 2.0 en Wikimedia Commons)" loading="lazy" decoding="async">
+                                    <img src="pics/Copilot_20251013_153701.png" alt="Estudiantes observando un biorreactor piloto en un laboratorio educativo (imagen con licencia CC BY 2.0 en Wikimedia Commons)" loading="lazy" decoding="async">
                                 </div>
                                 <div class="bio-card-body">
                                     <h3 class="h5" data-i18n="bio.card2.title">Para aulas y academias</h3>
                                     <p class="mb-3" data-i18n="bio.card2.text">Facilitan prácticas guiadas de microbiología, ingeniería de tejidos y control de procesos con datos listos para análisis.</p>
-                                    <a class="bio-credit" href="https://commons.wikimedia.org/wiki/File:Pg166_bioreactor.jpg" target="_blank" rel="noopener" data-i18n="bio.card2.credit">Imagen de Wikimedia Commons (CC BY 2.0)</a>
                                 </div>
                             </article>
                         </div>
-                        <div class="col-12" data-animate>
+                        <div class="col" data-animate>
                             <article class="bio-card h-100">
                                 <div class="bio-card-media">
-                                    <img src="pics/Copilot_20251105_140108.png" alt="Científica operando el biorreactor" title="Científica operando el biorreactor" loading="lazy" decoding="async">
+                                    <img src="pics/Copilot_20251105_140108.png" alt="Científica operando el biorreactor BioSync en laboratorio" title="Científica operando el biorreactor BioSync en laboratorio" loading="lazy" decoding="async">
                                 </div>
                                 <div class="bio-card-body">
                                     <h3 class="h5" data-i18n="bio.card3.title">Para organizaciones y clientes</h3>
@@ -215,8 +257,9 @@
                 <div class="col-md-6 col-lg-3" data-animate>
                     <div class="card product-card h-100">
                         <figure class="mb-0">
-                            <img src="pics/Copilot_20251013_153701.png" class="card-img-top" alt="Estudiante utilizando el biorreactor en un aula" loading="lazy" decoding="async">
-                            <figcaption class="figure-caption text-center p-2">Estudiante en aula utilizando el biorreactor.</figcaption>
+                            <!-- Actualizado para mostrar la imagen de producto provista -->
+                            <img src="pics/Copilot_20251103_215852.png" class="card-img-top" alt="Prototipo de biorreactor BioSync con controles BioLight y BioShaker" loading="lazy" decoding="async">
+                            <figcaption class="figure-caption text-center p-2">Prototipo de biorreactor BioSync con controles BioLight y BioShaker.</figcaption>
                         </figure>
                         <div class="card-body d-flex flex-column">
                             <h3 class="h5">Kit BioExplorer</h3>
@@ -262,7 +305,7 @@
                 </div>
                 <div class="col-md-6 col-lg-3" data-animate>
                     <div class="card product-card h-100">
-                        <img src="pics/Diseño sin título (3).png" class="card-img-top" alt="Banner promocional de BioSync" loading="lazy" decoding="async">
+                        <img src="Diseño sin título (3).png" class="card-img-top" alt="Banner promocional de BioSync" loading="lazy" decoding="async">
                         <div class="card-body d-flex flex-column">
                             <h3 class="h5">Material Promocional</h3>
                             <p class="card-text">Descubre cómo nuestros kits pueden transformar tu aula. ¡Contáctanos para más información!</p>
@@ -348,7 +391,7 @@
                 <div class="col-lg-6" data-animate>
                     <a class="partner-card" href="https://www.linkedin.com/company/hubdenegociossosteniblesunab/" target="_blank" rel="noopener" aria-label="LinkedIn del Hub de Negocios Sostenibles UNAB">
                         <div class="partner-logo" aria-hidden="true">
-                            <img src="https://media.licdn.com/dms/image/v2/D560BAQGpTYBHV2AwoA/company-logo_200_200/company-logo_200_200/0/1724857979621/hubdenegociossosteniblesunab_logo?e=1762387200&amp;v=beta&amp;t=Q1cvIosCKnr9eOTZ6gH2X6UdskJa3hwecS3kBmZD1LQ" alt="Logo del Hub de Negocios Sostenibles UNAB" loading="lazy" decoding="async">
+                            <img src="pics/hubdenegociossosteniblesunab_logo.jpg" alt="Logo del Hub de Negocios Sostenibles UNAB" loading="lazy" decoding="async">
                         </div>
                         <div class="partner-copy">
                             <p class="partner-name" data-i18n="partners.name">Hub de Negocios Sostenibles UNAB</p>
@@ -376,7 +419,7 @@
                             <article class="founder-card h-100">
                                 <div class="founder-photo">
                                     <!-- change: Updated Fernanda portrait to official LinkedIn photography -->
-                                    <img src="https://media.licdn.com/dms/image/v2/D4D03AQFCjP-647Xxbg/profile-displayphoto-crop_800_800/B4DZjOj2mRGQAI-/0/1755812163887?e=1762387200&amp;v=beta&amp;t=0sFmDNtVPsQC-vTTBOQGdWEoqDjrumppx-k8_oUBDrc" alt="Retrato de Fernanda Rojas Morales" loading="lazy" decoding="async">
+                                    <img src="pics/Fernanda.jpg" alt="Retrato de Fernanda Rojas Morales" loading="lazy" decoding="async">
                                 </div>
                                 <div class="founder-content">
                                     <h3 class="founder-name" data-i18n="founders.fernanda.name">Fernanda Rojas Morales</h3>
@@ -390,7 +433,7 @@
                             <article class="founder-card h-100">
                                 <div class="founder-photo">
                                     <!-- change: Updated Francisco portrait to official LinkedIn photography -->
-                                    <img src="https://media.licdn.com/dms/image/v2/D4D03AQGZzymfMaww_A/profile-displayphoto-crop_800_800/B4DZkOJdvhH0AI-/0/1756878988179?e=1762387200&amp;v=beta&amp;t=kW9rHMWCXef-EqDJVjV-kGVltNQvgSaF0qIW1QsO4dk" alt="Retrato de Francisco Javier Castro Becerra" loading="lazy" decoding="async">
+                                    <img src="pics/Francisco.jpg" alt="Retrato de Francisco Javier Castro Becerra" loading="lazy" decoding="async">
                                 </div>
                                 <div class="founder-content">
                                     <h3 class="founder-name" data-i18n="founders.francisco.name">Francisco Javier Castro Becerra</h3>
@@ -416,24 +459,18 @@
             <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-animate>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <div class="testimonial-card mx-auto">
-                            <p class="testimonial-text" data-i18n="testimonials.quote1">“Si unas zapatillas hacen que un niño sueñe con ser futbolista, un biorreactor accesible puede hacer que sueñe con ser científico.”</p>
-                            <h3 class="testimonial-author" data-i18n="testimonials.author1">Equipo BioSync</h3>
+                        <div class="testimonial-card">
+                            <!-- Se eliminó el atributo data-i18n para que siempre se muestre el texto de la cita -->
+                            <p class="testimonial-text">“Si unas zapatillas hacen que un niño sueñe con ser futbolista, un biorreactor accesible puede hacer que sueñe con ser científico.”</p>
+                            <h3 class="testimonial-author">Equipo BioSync</h3>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="testimonial-card mx-auto">
-                            <p class="testimonial-text" data-i18n="testimonials.quote2">“Nuestro prototipo de biorreactor educativo despierta curiosidad y acerca procesos biotecnológicos a estudiantes que nunca habían experimentado con ellos.”</p>
-                            <h3 class="testimonial-author" data-i18n="testimonials.author2">Fernanda Rojas Morales</h3>
-                            <span class="testimonial-role" data-i18n="testimonials.role2">Bióloga • Ganadora Endowment Emprendimiento Innovador (UNAB)</span>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="testimonial-card mx-auto">
-                            <img src="pics/Copilot_20251013_153701.png" class="card-img-top mb-3" alt="Estudiante utilizando el biorreactor en un aula" loading="lazy" decoding="async">
-                            <p class="testimonial-text">“Los estudiantes estaban fascinados. Ver la ciencia en acción de esta manera es mucho más impactante que leerla en un libro.”</p>
-                            <h3 class="testimonial-author">Docente de Ciencias</h3>
-                            <span class="testimonial-role">Colegio San José</span>
+                        <div class="testimonial-card">
+                            <!-- Se eliminó el atributo data-i18n para que siempre se muestre el texto de la cita y autor -->
+                            <p class="testimonial-text">“Nuestro prototipo de biorreactor educativo despierta curiosidad y acerca procesos biotecnológicos a estudiantes que nunca habían experimentado con ellos.”</p>
+                            <h3 class="testimonial-author">Fernanda Rojas Morales</h3>
+                            <span class="testimonial-role">Bióloga • Ganadora Endowment Emprendimiento Innovador (UNAB)</span>
                         </div>
                     </div>
                 </div>
@@ -529,9 +566,11 @@
             <div class="row g-4 align-items-center">
                 <div class="col-md-4 text-center text-md-start">
                     <a class="navbar-brand d-inline-flex align-items-center" href="#inicio">
-                        <img src="assets/Logo.png" alt="Logotipo de BioSync" class="logo me-2">
+                        <img src="pics/Logo.png" alt="Logotipo de BioSync" class="logo me-2"style="
+    background-color: white;
+">
                         <!-- change: Synced footer logo reference and alt text -->
-                        <span class="fw-semibold">BioSync</span>
+                        
                     </a>
                     <p class="mt-3 small" data-i18n="footer.description">Fabricamos ecosistemas científicos accesibles para despertar vocaciones STEM en toda Latinoamérica.</p>
                 </div>
